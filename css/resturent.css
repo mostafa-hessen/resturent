@@ -1,0 +1,563 @@
+:root {
+  /*========== Colors ==========*/
+  --first-color: #069C54;
+  --first-color-alt: #048654;
+  --title-color: #393939;
+  --text-color: #707070;
+  --text-color-light: #A6A6A6;
+  --body-color: #FBFEFD;
+  --container-color: #FFFFFF;
+
+  /*========== Font and typography ==========*/
+  --body-font: 'Poppins', sans-serif;
+  --biggest-font-size: 2.25rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+::selection{background-color: #069C54; }
+
+body.dark {
+  background-color: #1D2521;
+  color: var(--body-color);
+}
+
+body.dark .p {
+  color: #fff
+}
+
+body.dark .navbar .navbar-toggler .span {
+  background-color: var(--text-color-light)
+}
+
+body.dark ul li a,
+body.dark footer .srction3 p,
+body.dark footer .section1 i {
+  color: var(--text-color-light) !important;
+}
+
+body.dark .menue .box,
+body.dark .navbar {
+  background-color: #27302C;
+  ;
+}
+
+body.dark .navbar .navbar-nav .nav-link {
+  color: #C7D1CC;
+}
+
+body.dark .navbar .navbar-nav .nav-link:hover,.navbar .navbar-nav .nav-item .nav-link.liactive {
+  color: var(--first-color) !important;
+   
+}
+body.dark .navbar   .navbar-brand:hover{color:rgb(241, 211, 211) }
+
+body.dark .icon-dark {
+  display: none;
+}
+
+body .icon-light {
+  display: none;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--body-color);
+}
+
+/*========== common Element ==========*/
+.show {
+  transition: top 17s;
+}
+
+.button-all-page {
+  background-color: var(--first-color);
+  color: #fff;
+  border: none;
+  text-transform: capitalize;
+  padding: 10px 18px;
+  border-radius: 7px;
+}
+
+.h6 {
+  color: var(--first-color);
+}
+
+.p {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.p-content {
+  color: #707070;
+}
+
+#scroll-button {
+  background-color: red;
+  width: 32px;
+  height: 30px;
+  position: fixed;
+  bottom: 10px;
+  right: 14px;
+  z-index: 2;
+  cursor: pointer;
+  text-align: center;
+  padding: 9px 0px 0px;
+  color: #dfdcdc;
+  background-color: #09ac5dda;
+  border-radius: 5px;
+  font-size: 13px;
+  transform: translateY(100px);
+  transition: all 1s;
+  visibility: hidden;
+}
+
+.scroll-button i:hover {
+  background-color: #069C54;
+}
+
+/*========== /common Element ==========*/
+
+/*========== navbar ==========*/
+
+.navbar {
+  text-transform: capitalize;
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+
+}
+
+.navbar .iconDad {
+  margin: 9.5px auto 0px ;
+}
+
+.navbar .icon {
+  margin: auto auto 10px;
+  cursor: pointer;
+}
+.navbar   .navbar-brand:hover{color:rgb(55, 54, 54) }
+.navbar .navbar-nav .nav-link {
+  color: #707070
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-nav .nav-item .nav-link.liactive,
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--first-color);
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+
+}
+
+.navbar .navbar-toggler {
+  padding: 8px 10px;
+}
+
+.navbar .navbar-toggler .span {
+  background-color: black;
+  width: 20px;
+  height: 2px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+/*========== /end  navbar ==========*/
+
+/*========== start home  ==========*/
+.home {
+  margin-bottom: 107px;
+}
+
+.home-content-parent {
+  display: flex;
+
+}
+
+.home .home-content {
+  width: 80%;
+  margin: auto;
+  line-height: 1.9;
+}
+
+.home .home-content h3 {
+  font-weight: bold;
+  font-size: 60px;
+  color: var(--first-color);
+}
+
+.home img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/*========== /end  Home ==========*/
+
+/*========== /Start Aboutus ==========*/
+
+.about {
+  margin-bottom: 107px;
+}
+
+.about .about-content {
+  width: 80%;
+  margin: auto;
+  line-height: 1.9;
+
+}
+
+.about img {
+  height: auto;
+  max-width: 100%;
+  border-radius: 15px;
+
+}
+
+/*========== /End   Aboutus  ==========*/
+
+/*========== /START   Services  ==========*/
+.services {
+  margin-bottom: 107px;
+}
+
+.services svg {
+  margin-bottom: 8px;
+  width: 66PX;
+  height: 65PX;
+  fill: var(--first-color);
+
+}
+
+/*========== /END   Services  ==========*/
+
+/*========== START MENUE ==========*/
+.menue {
+  margin-bottom: 107px;
+}
+
+.menue .row2 {
+  justify-content: center;
+}
+
+.menue .box {
+  background-color: rgb(255, 255, 255);
+  width: fit-content;
+  height: 260px;
+  padding: 15px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 0.2rem 1rem rgb(0 0 0 / 13%);
+
+}
+
+.menue .box img {
+  width: 54%;
+  margin: auto;
+  display: block;
+  margin-top: 10px;
+  ;
+  margin-bottom: 19px;
+}
+
+.menue .box h6 {
+  font-weight: bold;
+}
+
+.menue .box p {
+  font-size: 13.4px;
+}
+
+.menue .box a {
+  background-color: #069C54;
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: -10%;
+  top: 90%;
+  border-radius: 8px;
+
+}
+
+.menue .box a i {
+  color: #fff;
+  font-size: 11px;
+  /* text-align: center;background-color: red; */
+  transform: translate(-10%);
+  padding: 0px 10px;
+
+}
+
+/*========== END  MENUE ==========*/
+
+
+/*========== START  APP ==========*/
+.app {
+  margin-bottom: 107px;
+}
+
+.app .app-content {
+  margin: 100px auto;
+  width: 90%;
+}
+
+.app .app-content img {
+  width: 40%;
+}
+
+/*========== END  APP ==========*/
+
+
+/*========== START CONTACT US   ==========*/
+.contact-us-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 51px;
+  margin-bottom: 200px;
+}
+
+/*========== END  CONTACT US ==========*/
+
+
+footer h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+footer .section1 i {
+  text-decoration: none;
+  color: rgb(0, 0, 0) !important;
+  letter-spacing: 7px;
+}
+
+footer ul li a {
+  color: var(--text-color);
+  font-size: 15px;
+}
+
+footer .srction3 p {
+  color: var(--title-color);
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+footer .srction4 p {
+  color: var(--title-color);
+  font-size: 19px !important;
+  margin-bottom: 2px;
+}
+
+footer .section4 a,
+footer p span,
+footer ul li a:hover {
+  color: var(--first-color);
+  text-decoration: none;
+  transition: .4;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*========== media query==========*/
+@media (max-width:576px) {
+  .about .about-content {
+    text-align: center;
+  }
+
+  .menue .box {
+    margin: 20px auto;
+  }
+
+  .app .app-content img {
+    width: 31%;
+  }
+
+}
+
+@media (min-width:576px) and (max-width:768px) {
+  .about .about-content {
+    width: 100%;
+    margin: 46px auto;
+    line-height: 1.3;
+  }
+}
+
+@media (min-width:786px) and (max-width:992px) {
+
+  .home,
+  .about {
+    margin-bottom: 220px;
+  }
+
+  .about .about-content {
+    margin: 41px auto;
+    line-height: 1.8;
+  }
+}
+
+@media (max-width:768px) {
+
+  /*==========  start common Element==========*/
+  .p {
+    font-size: 21px;
+    color: var(--title-color);
+  }
+
+  /*========== End Common Element==========*/
+
+  .navbar {
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 1px 1px 5px rgba(214, 214, 214, 0.356);
+  }
+
+  .navbar .navbar-collapse {
+    margin-top: 30px;
+  }
+
+  .navbar-collapse .nav-link {
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  .home .home-content {
+    width: 100%;
+    margin-left: 10px;
+    line-height: 1.8;
+  }
+
+  .home .home-content h3 {
+    font-size: 40px;
+  }
+
+  .home img,
+  .about img {
+    display: block;
+    margin: 40px auto;
+  }
+
+  .about .row2,
+  .app .row2 {
+    flex-wrap: wrap-reverse;
+  }
+
+  .services .sevices1,
+  .services .sevices2 {
+    margin-bottom: 40px;
+  }
+
+  .app .app-content {
+    margin: 100px auto 65px;
+  }
+
+  .app .app-img img {
+    margin: 10px auto 20px !important;
+  }
+
+  .app .app-content,
+  .contact-us .contact-us-content {
+    text-align: center;
+  }
+}
+
+@media (max-width:992px) {
+
+  .home img,
+  .about img,
+  .app .app-img img {
+    width: 290px;
+    display: block;
+    margin: 47px auto 20px;
+  }
+
+}
+
+@media (min-width:992px) {
+  .navbar-nav .nav-link,.navbar .iconDad{margin-left: 20px   }
+  .navbar .iconDad{margin-top: 10px;}
+  .home img,
+  .about img,
+  .app img {
+    width: 400px;
+  }
+
+  .about .about-content {
+    width: 90%;
+  }
+
+}
+
+@media (min-width:767px)and (max-width:992px) {
+  .navbar-collapse {
+    margin-top: -5px !important;
+  }
+
+  .home .home-content h3 {
+    font-size: 50px;
+  }
+
+  .p {
+    font-size: 28px;
+  }
+
+  .home img,
+  .about img,
+  .app img {
+    width: 500px;
+  }
+}
+
+@media (min-width:1200px) {
+  .home img {
+    width: 500px;
+  }
+
+  .about .about-content {
+    width: 80%;
+    margin: 20px -50px
+  }
+
+  .menue {
+    margin-bottom: 250px;
+  }
+
+  .menue .box {
+    margin: auto;
+  }
+
+  .app .app-content {
+    margin: 100px -40px auto 0px;
+    width: 90%;
+    line-height: 2;
+  }
+
+  .app .app-content img {
+    margin-top: 20px;
+    width: 160px;
+  }
+}
